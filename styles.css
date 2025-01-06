@@ -1,30 +1,51 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000;
+    background-image: url("images/nature.jpg");
+    background-size: cover;
+    background-attachment: fixed;
     color: #fff;
     text-align: center;
 }
 
-header {
-    position: fixed;
-    text-align:left;
-    top: 0;
-    left: 10;
+.header {
+    position: absolute;
+    text-align: left;
+    top: 4rem;
+    left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     z-index: 10;
+    background: none; /* Removed transparent background */
 }
 
-header h1 {
+.header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.header h2 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 400;
 }
 
+.header h3.subtitle {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.header p.film-note {
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
 main {
-    margin-top: 100px;
+    position: relative;
+    margin-top: 250px; /* Increased margin to prevent overlap */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,6 +68,10 @@ main {
     max-width: 60%;
     font-size: 1.2rem;
     line-height: 1.5;
+}
+
+.film-title {
+    font-size: 7rem;
 }
 
 footer {
