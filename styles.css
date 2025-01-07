@@ -1,50 +1,57 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-image: url("images/nature.jpg");
+    background-image: url("images/milo.png");
     background-size: cover;
     background-attachment: fixed;
-    color: #fff;
+    color: white;
     text-align: center;
+    overscroll-behavior: contain;
+    height: 110%; /* Ensures it applies to the whole page */
 }
 
 .header {
-    position: absolute;
+    position: relative;
     text-align: left;
     top: 4rem;
     left: 0;
+    bottom: 4rem;
     width: 100%;
-    padding: 1rem 2rem;
+    padding: 1.5rem 4rem 8rem 8rem;
     z-index: 10;
     background: none; /* Removed transparent background */
 }
 
 .header h1 {
     margin: 0;
-    font-size: 2.5rem;
+    font-size: 9rem;
     font-weight: 700;
+    color:white;
 }
 
 .header h2 {
     margin: 0;
     font-size: 1.5rem;
     font-weight: 400;
+    color: white;
 }
 
 .header h3.subtitle {
     margin-top: 1rem;
     font-size: 1.2rem;
+    padding-top: 10rem;
     font-style: italic;
 }
 
 .header p.film-note {
-    margin-top: 0.5rem;
-    font-size: 1rem;
+    margin-top: 14rem;
+    font-size: 0.9rem;
     font-weight: 300;
+    font-weight: bold;
 }
 
 main {
-    position: relative;
+    position: absolute;
     margin-top: 250px; /* Increased margin to prevent overlap */
     display: flex;
     flex-direction: column;
@@ -65,7 +72,7 @@ main {
 
 .text-section {
     margin: 2rem auto;
-    max-width: 60%;
+    max-width: 80%;
     font-size: 1.2rem;
     line-height: 1.5;
 }
@@ -77,7 +84,6 @@ main {
 footer {
     margin-top: 3rem;
     padding: 1rem;
-    background: rgba(0, 0, 0, 0.8);
 }
 
 footer p {
