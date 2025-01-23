@@ -81,6 +81,8 @@ main {
 
 .film-title {
     font-size: 7rem;
+    position: relative;
+    left: -12px;
 }
 
 footer {
